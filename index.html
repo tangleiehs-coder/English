@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>王冬妮的 EHS 英语书架</title>
+<meta name="description" content="安全五点半 · EHS情景英语：用 5W 认识训练营，再翻几本样书——点读卡、样课试听、日常生活、EHS场景，点书脊就翻。">
+<meta property="og:title" content="王冬妮的 EHS 英语书架">
+<meta property="og:description" content="用 5W 认识训练营，再翻几本样书——点书脊就翻。">
+<meta property="og:image" content="https://wangdn2026.github.io/ehs-shelf/og_shelf.png">
+<meta property="og:type" content="website">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="王冬妮的 EHS 英语书架">
+<meta name="twitter:description" content="用 5W 认识训练营，再翻几本样书——点书脊就翻。">
+<meta name="twitter:image" content="https://wangdn2026.github.io/ehs-shelf/og_shelf.png">
+<style>
+:root{
+  --paper:#faf7f1;
+  --ink:#2b2b2b;
+  --muted:#8a8175;
+  --blue:#0066cc;
+  --orange:#ff7700;
+  --teal:#0e9f9a;
+  --gold:#c9971f;
+  --plum:#8a6db5;
+  --green:#2f9e6b;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{-webkit-text-size-adjust:100%}
+body{
+  font-family:-apple-system,BlinkMacSystemFont,"PingFang SC","Microsoft YaHei",sans-serif;
+  background:var(--paper);
+  color:var(--ink);
+  line-height:1.6;
+  -webkit-font-smoothing:antialiased;
+  padding:0 12px 54px;
+}
+.wrap{max-width:560px;margin:0 auto}
+
+.brand{text-align:center;padding:34px 0 4px}
+.brand .logo{font-size:12.5px;letter-spacing:2px;color:var(--orange);font-weight:700}
+.brand h1{font-size:22px;margin-top:9px;font-weight:800;letter-spacing:1px}
+.brand p{font-size:12.5px;color:var(--muted);margin-top:7px}
+
+/* 书架：一排书脊 */
+.shelf{
+  display:flex;gap:7px;justify-content:center;align-items:flex-end;
+  margin-top:30px;
+}
+.book{
+  display:flex;flex-direction:column;align-items:center;
+  flex:1 1 0;min-width:0;text-decoration:none;color:inherit;
+}
+.desc{
+  font-size:9.5px;color:var(--muted);
+  text-align:center;line-height:1.35;min-height:26px;
+  margin-bottom:9px;
+}
+.spine{
+  position:relative;
+  width:100%;height:166px;
+  border-radius:8px 8px 4px 4px;
+  display:flex;align-items:center;justify-content:center;
+  writing-mode:vertical-rl;text-orientation:upright;
+  text-align:center;
+  color:#fff;font-size:18px;font-weight:800;letter-spacing:4px;
+  box-shadow:inset -4px 0 7px rgba(255,255,255,.28),
+             inset 4px 0 7px rgba(0,0,0,.16),
+             0 5px 12px rgba(60,50,30,.14);
+  transition:transform .14s ease;
+}
+.spine::before{
+  content:"";position:absolute;top:8px;left:50%;transform:translateX(-50%);
+  width:50%;height:4px;border-radius:3px;background:rgba(255,255,255,.5);
+}
+.book:active .spine{transform:translateY(3px)}
+.book--blue .spine{background:var(--blue)}
+.book--teal .spine{background:var(--teal)}
+.book--orange .spine{background:var(--orange)}
+.book--gold .spine{background:var(--gold)}
+.book--plum .spine{background:var(--plum)}
+.book--green .spine{background:var(--green)}
+
+.board{
+  height:14px;border-radius:4px;
+  background:linear-gradient(180deg,#cdc1aa,#b3a78d);
+  box-shadow:0 7px 16px rgba(60,50,30,.14);
+}
+
+.hint{text-align:center;font-size:11px;color:var(--muted);margin-top:13px}
+
+.foot{text-align:center;margin-top:32px;font-size:12px;color:var(--muted);line-height:1.8}
+.foot .strong{color:var(--orange);font-weight:700}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <div class="brand">
+    <div class="logo">安全五点半 · EHS情景英语</div>
+    <h1>我的 EHS 英语书架</h1>
+    <p>用 5W 认识训练营，再翻几本样书</p>
+  </div>
+
+  <div class="shelf">
+    <a class="book book--blue" href="https://wangdn2026.github.io/ehs-course/#what">
+      <div class="desc">What<br>训练营是啥</div>
+      <div class="spine">何事</div>
+    </a>
+    <a class="book book--teal" href="https://wangdn2026.github.io/ehs-course/#who">
+      <div class="desc">Who<br>谁讲·谁学</div>
+      <div class="spine">何人</div>
+    </a>
+    <a class="book book--gold" href="https://wangdn2026.github.io/ehs-course/#when">
+      <div class="desc">When<br>啥时上课</div>
+      <div class="spine">何时</div>
+    </a>
+    <a class="book book--orange" href="https://wangdn2026.github.io/ehs-course/#where">
+      <div class="desc">Where<br>线上咋学</div>
+      <div class="spine">何地</div>
+    </a>
+    <a class="book book--plum" href="https://wangdn2026.github.io/ehs-course/#why">
+      <div class="desc">Why<br>凭啥选这</div>
+      <div class="spine">为何</div>
+    </a>
+    <a class="book book--green" href="https://wangdn2026.github.io/ehs-flipcards/">
+      <div class="desc">A6 随身<br>点读磨耳</div>
+      <div class="spine">点读卡</div>
+    </a>
+    <a class="book book--orange" href="https://wangdn2026.github.io/ehs-trial/">
+      <div class="desc">听一节<br>样课</div>
+      <div class="spine">样课试听</div>
+    </a>
+    <a class="book book--teal" href="https://wangdn2026.github.io/ehs-readalong/read_life_1.html">
+      <div class="desc">生活场景<br>跟读</div>
+      <div class="spine">日常生活</div>
+    </a>
+    <a class="book book--blue" href="https://wangdn2026.github.io/ehs-readalong/read_ehs_1.html">
+      <div class="desc">EHS 模块<br>跟读</div>
+      <div class="spine">EHS场景</div>
+    </a>
+  </div>
+  <div class="board"></div>
+
+  <div class="hint">↑ 点任意一本书脊进入</div>
+
+  <div class="foot">
+    <div class="strong">安全五点半 · EHS情景英语</div>
+    <div>内容均为原创自研 · 欢迎分享</div>
+  </div>
+
+</div>
+</body>
+</html>
